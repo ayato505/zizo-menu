@@ -1,4 +1,5 @@
 <!doctype html>
+<!-- Copyright (c) 2026 ayato. All rights reserved. -->
 <html lang="ar">
 <head>
 <meta charset="utf-8">
@@ -89,6 +90,7 @@ body.editing .edit-panel{display:flex}
   box-shadow:0 10px 30px rgba(0,0,0,.35); transition:opacity .25s, transform .25s;
 }
 .toast.show{opacity:1; transform:translate(-50%, 0)}
+.copy{margin:18px 0 0; text-align:center; font-size:12px; color:#5f8a8f}
 
 /* ---------- stage + flip ---------- */
 .stage{display:flex; justify-content:center; perspective:2400px}
@@ -364,7 +366,7 @@ body.editing .ed{display:inline-flex}
 @page{size:A4; margin:0}
 @media print{
   html,body{background:none; padding:0}
-  .bar,.toast,.ed{display:none!important}
+  .bar,.toast,.ed,.copy{display:none!important}
   .stage{display:block; perspective:none}
   .flipper{font-size:4mm; width:210mm; height:auto; transform:none!important; transition:none}
   .sheet{position:relative; width:210mm; height:297mm; transform:none; box-shadow:none; break-after:page; page-break-after:always}
@@ -459,6 +461,7 @@ body.editing .ed{display:inline-flex}
 
   </div>
 </main>
+<p class="copy latin">© 2026 ayato</p>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 <input type="file" id="img-pick" accept="image/*" hidden>
 
@@ -534,7 +537,23 @@ body.editing .ed{display:inline-flex}
    },
    {
     "name": "موز باللبن",
-    "price": "20"
+    "price": "30"
+   },
+   {
+    "name": "ليمون",
+    "price": "25"
+   },
+   {
+    "name": "ليمون نعناع",
+    "price": "25"
+   },
+   {
+    "name": "زبادي",
+    "price": "30"
+   },
+   {
+    "name": "أوريو",
+    "price": "30"
    }
   ]
  },
@@ -575,7 +594,7 @@ body.editing .ed{display:inline-flex}
    },
    {
     "name": "مياه كبيرة",
-    "price": "25"
+    "price": "15"
    }
   ]
  },
@@ -584,11 +603,11 @@ body.editing .ed{display:inline-flex}
   "items": [
    {
     "name": "إندومي صغير",
-    "price": "20"
+    "price": "15"
    },
    {
     "name": "إندومي كبير",
-    "price": "25"
+    "price": "20"
    }
   ]
  },
